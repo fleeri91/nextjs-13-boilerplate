@@ -1,25 +1,14 @@
-import React from 'react';
-import { Meta, Story } from "@storybook/react";
-import {{properCase name}} from './{{properCase name}}';
+import type { Meta, StoryObj } from '@storybook/react'
 
-type {{properCase name}}Props = React.ComponentProps<typeof {{properCase name}}>;
+import {{properCase name}} from './{{properCase name}}'
 
-/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
-export default {
-	title: '3. Components/{{properCase type}}s/{{properCase name}}',
-	component: {{properCase name}},
-} as Meta<{{properCase name}}Props>;
+const meta: Meta<typeof {{properCase name}}> = {
+  component: {{properCase name}},
+}
 
-const Template: Story<{{properCase name}}Props & {}> = (args) => (
-  <{{properCase name}} {...args} />
-);
+export default meta
+type Story = StoryObj<typeof {{properCase name}}>
 
-export const Default = Template.bind({});
-
-Default.args = {};
-
-Default.parameters = {
-	controls: {
-		include: Object.keys(Default.args),
-	},
+export const Demo: Story = {
+  args: {},
 }
