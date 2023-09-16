@@ -2,7 +2,7 @@ module.exports = (plop) => {
   /** Constants */
   const COMPONENT_FOLDER_UI = 'app/components/ui'
   const COMPONENT_FOLDER_FUNCTIONAL = 'app/components'
-  const PAGE_FOLDER = 'app/'
+  const PAGE_FOLDER = 'app/(pages)/'
   const HOOK_FOLDER = 'app/hooks'
 
   /**
@@ -117,9 +117,7 @@ module.exports = (plop) => {
         pattern: `/* PLOP_INJECT_EXPORT */`,
         template: `\t{{camelCase name}},`,
       })
-      actions.push(
-        '--> Your new hook was created and added to the hooks-index!'
-      )
+      actions.push('--> Your new hook was created and added to the hooks-index!')
       return actions
     },
   })
