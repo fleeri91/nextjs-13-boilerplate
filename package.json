@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "new": "plop"
   },
   "dependencies": {
     "@types/node": "20.6.2",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^9.0.0",
+    "plop": "^4.0.0",
     "prettier": "3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4"
   }

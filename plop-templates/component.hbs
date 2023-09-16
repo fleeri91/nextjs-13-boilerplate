@@ -1,0 +1,11 @@
+interface {{properCase name}}Props extends HTMLAttributes<HTMLElement> {}
+
+const {{properCase name}} = ({ children }: {{properCase name}}Props): JSX.Element | null => {
+	return (
+		<div>
+			{children}
+		</div>
+	);
+};
+
+export default {{properCase name}};
