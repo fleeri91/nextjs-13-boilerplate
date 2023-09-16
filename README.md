@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js boilerplate
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+```sh
+npx create-next-app --example https://github.com/fleeri91/nextjs-boilerplate
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Run Next.js in development
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+npm run dev
+```
 
-## Learn More
+#### Run Storybook in development
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm run storybook
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Run jest testing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
+npm run test
+```
 
-## Deploy on Vercel
+#### Create new component template
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run new component
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Create new page template
+
+```sh
+npm run new page
+```
+
+#### Create new hook template
+
+```sh
+npm run new hook
+```
+
+## Technology
+
+### Next.js
+
+Next.js is a React framework that gives you building blocks to create web applications.
+
+By framework, we mean Next.js handles the tooling and configuration needed for React, and provides additional structure, features, and optimizations for your application.
+
+You can use React to build your UI, then incrementally adopt Next.js features to solve common application requirements such as routing, data fetching, integrations - all while improving the developer and end-user experience.
+
+Whether you’re an individual developer or part of a larger team, you can leverage React and Next.js to build fully interactive, highly dynamic, and performant web applications.
+
+### Typescript
+
+TypeScript is a syntactic superset of JavaScript which adds static typing.
+
+This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.
+
+### Tailwind
+
+Tailwind CSS is a utility-first CSS framework designed to enable users to create applications faster and easier.
+
+You can use utility classes to control the layout, color, spacing, typography, shadows, and more to create a completely custom component design — without leaving your HTML or writing a single line of custom CSS.
+
+### Storybook
+
+Storybook is a frontend workshop for building UI components and pages in isolation.
+
+### Jest
+
+Jest is a JavaScript-based framework for testing React, React Native and other JavaScript-based applications.
